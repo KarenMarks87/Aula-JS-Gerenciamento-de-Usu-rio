@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Tabelas</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        tfoot {
+            font-size: 25px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- legenda tabela -->
+        <caption>Estoque de Livros</caption>
+        <!-- cabeçalho tabela-->
+       <thead>  
+         <!-- linha - table row-->
+            <tr>
+                <!-- itens cabeçalho coluna - table head-->
+                <th>LIVROS</th>
+                <th>QUANTIDADE</th>
+            </tr>
+        </thead>
+        <!-- corpo tabela -->
+        <tbody>
+            <!-- em linha -->
+            <tr>
+                <!-- itens corpo coluna - table data-->
+                <td>HTML5 e CSS3</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Banco de Dados</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Lógica de Programação</td>
+                <td>134</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan - mesclar células tabela -->
+                <td colspan="2">Livros em Estoque</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
